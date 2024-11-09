@@ -3,6 +3,7 @@ let domCounterDays = document.querySelector("#days");
 let domCounterHours = document.querySelector("#hours");
 let domCounterMinutes = document.querySelector("#minutes");
 let domCounterSeconds = document.querySelector("#Seconds");
+let clockBody = document.querySelector(".clockBody");
 // ================== Date Variables ==============
 let countDownDate = new Date("January 01, 2025 00:00:00");
 let counter = countDownDate;
@@ -36,5 +37,6 @@ if (current < counter) {
   domCounterSeconds.innerHTML = "0";
 } else {
   clearInterval(running);
-  document.getElementById("timerClose").innerHTML = "Happy New Year 2025!";
+  document.getElementById("timerClose").innerHTML = "Happy New Year";
+  clockBody.style.display = "none";
 }

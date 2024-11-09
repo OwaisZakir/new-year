@@ -11,78 +11,215 @@ body {
 }
 
 @font-face {
-  font-family: clock;
-  src: url(../font/web1.ttf);
+  font-family: "clock";
+  src: url("../font/web1.ttf");
 }
-/* Add more styles below */
-.container {
-  background: url(https://img.freepik.com/free-photo/dark-grunge-texture-background-with-scratches-stains_1048-18915.jpg?t=st=1731168554~exp=1731172154~hmac=044f42992c50e73ca152f5011ed8ca8c575bd2f4733680a8fb9ec7ca6838a9bd&w=740) no-repeat center;
-  background-size: cover;
-  color: #fff;
-  width: 100%;
-  height: 100vh;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-}
-.container .clock {
-  width: 80%;
-  height: 450px;
-  background: rgba(113, 125, 129, 0.19);
-  border-radius: 16px;
-  backdrop-filter: blur(3.1px);
-  -webkit-backdrop-filter: blur(3.1px);
-  border: 1px solid rgba(113, 125, 129, 0.32);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  border: 1px solid rgba(113, 125, 129, 0.32);
-  padding: 1rem;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-.container .clock .clockBody {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.7607843137);
-  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
-}
-.container .clock .clockBody .clockItems {
-  width: 15%;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgba(113, 125, 129, 0.466);
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
-}
-.container .clock .clockBody .clockItems:nth-last-child(1) {
+  background: url("https://static.vecteezy.com/system/resources/previews/027/812/476/non_2x/abstract-technology-background-with-connection-lines-and-dots-3d-rendering-abstract-digital-background-of-points-and-lines-plexus-big-data-network-or-connection-ai-generated-free-photo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "clock", sans-serif;
   color: #fff;
-  animation: changeSecond 1s step-end infinite;
-  -webkit-animation: changeSecond 1s step-end infinite;
-}
-.container .clock .clockBody .clockItems h4 {
-  font-size: 3rem;
+  overflow: hidden;
 }
 
-@keyframes changeSecond {
-  0% {
-    opacity: 1;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.clock {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4vw;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 50vw;
+  min-width: 300px;
+}
+.clock .clockHead {
+  margin-bottom: 2rem;
+}
+.clock .clockHead h1 {
+  font-size: 5vw;
+  margin-bottom: 0.5rem;
+}
+.clock .clockHead h3 {
+  font-size: 3vw;
+}
+.clock .clockBody {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+.clock .clockBody .clockItems {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+.clock .clockBody .clockItems h4 {
+  font-size: 4vw;
+}
+.clock .clockBody .clockItems h5 {
+  font-size: 1.2vw;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+.clock .clockBody .clockItems:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .clock {
+    padding: 5vw;
+    width: 70vw;
   }
-  100% {
-    opacity: 0;
+  .clockHead h1 {
+    font-size: 8vw;
+  }
+  .clockHead h3 {
+    font-size: 5vw;
+  }
+  .clockBody .clockItems {
+    padding: 4vw;
+  }
+  .clockBody .clockItems h4 {
+    font-size: 7vw;
+  }
+  .clockBody .clockItems h5 {
+    font-size: 3vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "clock";
+  src: url("../font/web1.ttf");
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://static.vecteezy.com/system/resources/previews/027/812/476/non_2x/abstract-technology-background-with-connection-lines-and-dots-3d-rendering-abstract-digital-background-of-points-and-lines-plexus-big-data-network-or-connection-ai-generated-free-photo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "clock", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.clock {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4vw;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 50vw;
+  min-width: 300px;
+}
+.clock .clockHead {
+  margin-bottom: 2rem;
+}
+.clock .clockHead h1 {
+  font-size: 5vw;
+  margin-bottom: 0.5rem;
+}
+.clock .clockHead h3 {
+  font-size: 3vw;
+}
+.clock .clockBody {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+.clock .clockBody .clockItems {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+.clock .clockBody .clockItems h4 {
+  font-size: 4vw;
+}
+.clock .clockBody .clockItems h5 {
+  font-size: 1.2vw;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+.clock .clockBody .clockItems:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .clock {
+    padding: 5vw;
+    width: 70vw;
+  }
+  .clockHead h1 {
+    font-size: 8vw;
+  }
+  .clockHead h3 {
+    font-size: 5vw;
+  }
+  .clockBody .clockItems {
+    padding: 4vw;
+  }
+  .clockBody .clockItems h4 {
+    font-size: 7vw;
+  }
+  .clockBody .clockItems h5 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 480px) {
+  .clock {
+    padding: 8vw;
+    width: 90vw;
+  }
+  .clockHead h1 {
+    font-size: 12vw;
+  }
+  .clockHead h3 {
+    font-size: 8vw;
+  }
+  .clockBody .clockItems {
+    padding: 6vw;
+  }
+  .clockBody .clockItems h4 {
+    font-size: 10vw;
+  }
+  .clockBody .clockItems h5 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
