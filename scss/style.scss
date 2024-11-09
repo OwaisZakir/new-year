@@ -1,0 +1,97 @@
+//  New Year CountDown Timer - Description
+//  Author: Owais Zakir
+//  Date: 2024-11-08
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+@font-face {
+  font-family: clock;
+  src: url(../font/web1.ttf);
+}
+/* Add more styles below */
+
+.container {
+  // background-color: #222;
+  background: url(https://img.freepik.com/free-photo/dark-grunge-texture-background-with-scratches-stains_1048-18915.jpg?t=st=1731168554~exp=1731172154~hmac=044f42992c50e73ca152f5011ed8ca8c575bd2f4733680a8fb9ec7ca6838a9bd&w=740)
+    no-repeat center;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+  .clock {
+    width: 80%;
+    height: 450px;
+    background: rgba(113, 125, 129, 0.19);
+    border-radius: 16px;
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(113, 125, 129, 0.32);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 1px solid rgba(113, 125, 129, 0.32);
+    padding: 1rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    .clockBody {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      color: #ffffffc2;
+      transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+      .clockItems {
+        width: 15%;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background: rgba(113, 125, 129, 0.466);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+        &:nth-last-child(1) {
+          color: #fff;
+          animation: changeSecond 1s step-end infinite;
+          -webkit-animation: changeSecond 1s step-end infinite;
+}
+        h4 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes changeSecond {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
