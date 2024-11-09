@@ -31,4 +31,4 @@ To get a local copy up and running, follow these simple steps:
 
 ## Contact
 
-For any inquiries or feedback, please contact me at[Owais-Zakir](mailto:owaiszakir88@gmail.com?subject=[GitHub]%20Source%20Han%20Sans).
+For any inquiries or feedback, please contact me at <a href="mailto:owaiszakir88@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>.
