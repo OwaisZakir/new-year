@@ -26,7 +26,9 @@ To get a local copy up and running, follow these simple steps:
    ```sh
    git clone https://github.com/OwaisZakir/new-year.git
    ```
+
 2. **Open the  `index.html` ile in your browser to view the countdown.
 
-##Contact
+## Contact
+
 For any inquiries or feedback, please contact me at[Owais-Zakir](mailto:owaiszakir88@gmail.com).
