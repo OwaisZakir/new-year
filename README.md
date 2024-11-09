@@ -27,7 +27,7 @@ To get a local copy up and running, follow these simple steps:
    git clone https://github.com/OwaisZakir/new-year.git
    ```
 
-2. **Open the  `index.html` ile in your browser to view the countdown.
+2. ** Open the  `index.html` ile in your browser to view the countdown.
 
 ## Contact
 
