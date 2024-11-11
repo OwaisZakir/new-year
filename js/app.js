@@ -5,7 +5,7 @@ let domCounterMinutes = document.querySelector("#minutes");
 let domCounterSeconds = document.querySelector("#Seconds");
 let clockBody = document.querySelector(".clockBody");
 // ================== Date Variables ==============
-let countDownDate = new Date("January 01, 2025 00:00:00");
+let countDownDate = new Date("January 01, 2023 00:00:00");
 let counter = countDownDate;
 let current = new Date();
 // =================== Set Interval ===================
